@@ -1,0 +1,11 @@
+
+%p
+  %b Name:
+  = @user.name
+%p
+  %b Avatar:
+  =image_tag @user.avatar.thumb
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path

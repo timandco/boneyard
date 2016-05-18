@@ -1,0 +1,18 @@
+=simple_form_for @user, html: { id: 'fileupload' } do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.file_field :avatar
+
+  .form-actions
+    -# = f.button :submit, id: 'upload-btn'
+
+%button#upload-btn
+  Submit
+
+#loader{style: 'display: none;'}
+  .pacman
+    .dot
+#progress.progress
+  .progress-bar.bar{:style => "width: 0%;"}
