@@ -1,0 +1,6 @@
+<% if @user.new_record? %>
+	alert("Failed to upload image.")
+<% else %>
+	alert("Shit worked dude")
+	window.location.href = "<%= user_path(@user) %>"
+<% end %>
