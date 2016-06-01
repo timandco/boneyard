@@ -13,7 +13,7 @@ class ToDosController < ApplicationController
   # GET /to_dos/new
   def new
     @to_do = ToDo.new
-    respond_to :js
+    respond_to :js, :html
   end
 
   # GET /to_dos/1/edit
