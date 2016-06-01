@@ -1,0 +1,16 @@
+%h1 Listing to_dos
+
+%table
+  %thead
+    %tr
+      %th Task
+      %th Due
+      %th
+      %th
+      %th
+  #to-dos
+    = render @to_dos
+
+=link_to 'New Task', new_to_do_path, remote: true
+
+#to-do-form{ style: "display: none;" }

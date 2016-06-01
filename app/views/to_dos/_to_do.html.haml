@@ -1,0 +1,7 @@
+%tbody
+  %tr
+    %td= to_do.task
+    %td= to_do.due
+    %td= link_to 'Show', to_do
+    %td= link_to 'Edit', edit_to_do_path(to_do)
+    %td= link_to 'Destroy', to_do, :method => :delete, :data => { :confirm => 'Are you sure?' }

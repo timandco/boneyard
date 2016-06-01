@@ -1,0 +1,9 @@
+= simple_form_for @to_do, remote: true do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :task
+    = f.input :due
+
+  .form-actions
+    = f.button :submit
