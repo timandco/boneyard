@@ -1,1 +1,1 @@
-ActionDispatch::ParamsParser::DEFAULT_PARSERS.delete(Mime::XML)
+ActionDispatch::Request.parameter_parsers.delete(Mime::XML)
